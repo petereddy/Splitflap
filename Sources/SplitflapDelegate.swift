@@ -31,7 +31,7 @@ import UIKit
  least some of its methods to provide the split-flap view with the data it needs
  to construct itself.
  */
-public protocol SplitflapDelegate: class {
+public protocol SplitflapDelegate: AnyObject {
   // MARK: - Setting the Rotation Duration of Flaps
 
   /**

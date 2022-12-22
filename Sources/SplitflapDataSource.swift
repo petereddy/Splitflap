@@ -32,7 +32,7 @@ import UIKit
  view. The data source provides the split-flap view with the number of flaps for
  displaying the split-flap view data.
 */
-public protocol SplitflapDataSource: class {
+public protocol SplitflapDataSource: AnyObject {
   // MARK: - Providing Counts for the Splitflap View
 
   /**
