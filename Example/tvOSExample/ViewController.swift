@@ -57,11 +57,11 @@ class ViewController: UIViewController, SplitflapDataSource, SplitflapDelegate {
 
   // MARK: - Splitflap Delegate Methods
 
-  func splitflap(splitflap: Splitflap, rotationDurationForFlapAtIndex index: Int) -> Double {
+  func splitflap(_ splitflap: Splitflap, rotationDurationForFlapAtIndex index: Int) -> Double {
     return 0.2
   }
 
-  func splitflap(splitflap: Splitflap, builderForFlapAtIndex index: Int) -> FlapViewBuilder {
+  func splitflap(_ splitflap: Splitflap, builderForFlapAtIndex index: Int) -> FlapViewBuilder {
     return FlapViewBuilder { builder in
       builder.backgroundColor = UIColor.black
       builder.cornerRadius    = 5
